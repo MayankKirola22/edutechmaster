@@ -34,7 +34,7 @@ export default function Dashboard({user,setUser}){
         {profile===null?<img src={Loading} alt='loading'/> :
             <div>
                 <div className='heading'>User Logged in</div>
-                <img className='profile' src={profile.picture} alt="profile picture"/>
+                <img className='profile' src={profile.picture} alt="profile"/>
                 <p>Name: {profile.name}</p>
                 <p>Email Address: {profile.email}</p>
                 <p>Logging out in {Math.round(TimeLeft/60)} minute(s)</p>
